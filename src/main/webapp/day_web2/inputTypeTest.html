@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>input tag의 여러가지 type살펴보기</h1>
+
+<form name="myfrm" action="inputResult.jsp">
+1.<input name="kosta1" autofocus="autofocus"> <br>
+2.<input type="text" name="kosta2"> <br>
+3.<input type="password" name="kosta3"> <br>
+4.<input type="search" name="kosta4"> <br>
+5.<input type="submit" value="submit" > <br>
+6.<input type="button" onclick="f()" value="서버전송"> <br>
+7.<input type="email" placeholder="aa@bb.com" name="kosta5"> <br>
+8.<input type="tel" pattern="[01]{3}-[0-9]{4}-[0=9]{4}"name="kosta6"> <br>
+9.<input type="url" placeholder="http://aa.bb.com" name="kosta7"> <br>
+10.number숫자만입력<input type="number" name="kosta8"><br>
+11.range:<input type="range" min="1" max="10" value="3" name="kosta9"><br>
+12.radio:서로베타적
+<input type="radio" name="subject" value="java" checked="checked">자바
+<input type="radio" name="subject" value="SQL" >SQL
+<input type="radio" name="subject" value="HTML">HTML
+<input type="radio" name="subject" value="CSS">CSS
+<br>
+12.radio:서로베타적
+<input type="radio" name="hobby" value="a">자바공부하기
+<input type="radio" name="hobby" value="b">걷기
+<input type="radio" name="hobby" value="c" checked>게임
+<input type="radio" name="hobby" value="d">농구
+<br>
+13.radio:서로베타적
+<input type="checkbox" name="hobby" value="a">자바공부하기
+<input type="checkbox" name="hobby" value="b">걷기
+<input type="checkbox" name="hobby" value="c" checked>게임
+<input type="checkbox" name="hobby" value="d">농구
+<br>
+14.color
+<input type="color"><br>
+15.date,month,week,time,datetime-local
+<input type="date"><br>
+<input type="month"><br>
+<input type="week"><br>
+<input type="time"><br>
+<input type="datetime-local"><br>
+<input type="submit" value="서버로 전송하기">
+<input type="reset" value="다시입력">
+<input type="image" src="../images/login.jpg">
+<input type="button" value="button타입">
+<button>버튼태그이용1(form이 서버로 전송됨)</button>
+<button>버튼태그</button>
+</form>
+<script>
+  function f() {
+	  alert("버튼을 누름");
+	  myfrm.action = "anchor.html";
+	  myfrm.submit();
+  }
+</script>
+</body>
+</html>
